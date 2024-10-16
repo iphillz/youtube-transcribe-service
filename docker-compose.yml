@@ -1,0 +1,9 @@
+version: '3'
+services:
+  transcribe-service:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./audio:/app/audio
+      - ./subtitles:/app/subtitles
